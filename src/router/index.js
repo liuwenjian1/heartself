@@ -56,6 +56,45 @@ export const constantRoutes = [
   },
 
   {
+    path: '/advice',
+    component: Layout,
+    children: [
+      {
+        path: 'adviceIndex.vue',
+        name: 'Advice',
+        component: () => import('@/views/advice/adviceIndex'),
+        meta: { title: '建议', icon: 'eye-open' }
+      }
+    ]
+  },
+
+  {
+    path: '/project',
+    component: Layout,
+    children: [
+      {
+        path: 'projectIndex.vue',
+        name: 'Project',
+        component: () => import('@/views/project/projectIndex'),
+        meta: { title: '项目', icon: 'eye-open' }
+      }
+    ]
+  },
+
+  {
+    path: '/case',
+    component: Layout,
+    children: [
+      {
+        path: 'projectIndex.vue',
+        name: 'Case',
+        component: () => import('@/views/case/caseIndex'),
+        meta: { title: '案例', icon: 'eye-open' }
+      }
+    ]
+  },
+
+  {
     path: '/example',
     component: Layout,
     redirect: '/example/table',
@@ -145,32 +184,6 @@ export const constantRoutes = [
         component: () => import('@/views/nested/menu2/index'),
         name: 'Menu2',
         meta: { title: 'menu2' }
-      }
-    ]
-  },
-
-  {
-    path: '/project',
-    component: Layout,
-    children: [
-      {
-        path: 'projectIndex.vue',
-        name: 'Project',
-        component: () => import('@/views/project/projectIndex'),
-        meta: { title: '项目', icon: 'eye-open' }
-      }
-    ]
-  },
-
-  {
-    path: '/case',
-    component: Layout,
-    children: [
-      {
-        path: 'projectIndex.vue',
-        name: 'Case',
-        component: () => import('@/views/case/caseIndex'),
-        meta: { title: '案例', icon: 'eye-open' }
       }
     ]
   },

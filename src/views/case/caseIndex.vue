@@ -1,11 +1,11 @@
 <template>
   <div>
     <el-row :gutter="10">
-      <el-col :xs="8" :sm="6" :md="4" :lg="10" :xl="8">
-    <div id="pie" style="width:900px ;height:300px;" />
+      <el-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8">
+    <div id="pie" style="height:300px;" />
       </el-col>
-      <el-col :xs="16" :sm="12" :md="8" :lg="14" :xl="16">
-    <div id="bar" style="width:900px ;height:300px;" />
+      <el-col :xs="16" :sm="16" :md="16" :lg="16" :xl="16">
+    <div id="bar" style="height:300px;" />
       </el-col>
     </el-row>
 
